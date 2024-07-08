@@ -33,22 +33,39 @@ nav {
 
 .search-bar {
     display: flex;
+    align-items: center;
     border: 1px solid #ccc;
-    border-radius: 20px;
+    border-radius: 24px;
     overflow: hidden;
+    width: 500px; 
+    background-color: white;
 }
 
 .search-bar input {
+    flex-grow: 1;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    outline: none;
 }
+
 .search-bar button {
     background: none;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
+.search-bar button:hover {
+    background-color: #f0f0f0;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
 
 .nav-links {
     display: flex;
@@ -86,9 +103,10 @@ nav {
 }
 
 
-/* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
+    width: 80%;
+    margin: 0 auto;
   }
   
   /* Hide the images by default */
